@@ -93,7 +93,7 @@ class StandaloneWebWidgetPlugin {
   modifyScripts({ publicPath, scripts }) {
     if (scripts.modifiedByWebWidgetStandalonePlugin) {
       throw Error(
-        `standalone-web-widget-webpack-plugin: You have two separate instances of standalone-web-widget-webpack-plugin in your webpack config. If using webpack-config-web-widget or vue-cli-plugin-web-widget, you do not need to manually add the standalone plugin since it's already added by those projects.`
+        `standalone-web-widget-webpack-plugin: You have two separate instances of standalone-web-widget-webpack-plugin in your webpack config. If using @web-widget/webpack-config-web-widget or @web-widget/vue-cli-plugin-web-widget, you do not need to manually add the standalone plugin since it's already added by those projects.`
       );
     }
 

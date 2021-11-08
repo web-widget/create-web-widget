@@ -34,8 +34,8 @@
     }
   },
   "peerDependencies": {
-    "html-webpack-plugin": "^5.3.2",
-    "webpack": "^5.51.1"
+    "html-webpack-plugin": "*",
+    "webpack": "*"
   },
   "repository": {
     "type": "git",

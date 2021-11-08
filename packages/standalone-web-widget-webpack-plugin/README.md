@@ -14,10 +14,10 @@ A webpack plugin for running web-widget microfrontends in standalone mode. This 
 ## Installation
 
 ```sh
-npm install --save-dev standalone-web-widget-webpack-plugin
+npm install --save-dev @web-widget/standalone-web-widget-webpack-plugin
 
 # alternatively
-yarn add --dev standalone-web-widget-webpack-plugin
+yarn add --dev @web-widget/standalone-web-widget-webpack-plugin
 ```
 
 ## Usage

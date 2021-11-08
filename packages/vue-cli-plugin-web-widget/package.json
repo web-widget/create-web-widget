@@ -1,0 +1,24 @@
+{
+  "name": "@web-widget/vue-cli-plugin-web-widget",
+  "description": "A vue-cli plugin for web-widget applications and parcels",
+  "version": "0.0.1-beta",
+  "scripts": {
+    "test": "tests/test.sh",
+    "test:vue2": "tests/testVue.sh 2",
+    "test:vue3": "tests/testVue.sh 3"
+  },
+  "author": "Joel Denning",
+  "license": "MIT",
+  "homepage": "https://web-widget.js.org/docs/ecosystem-vue.html#vue-cli",
+  "repository": "https://github.com/web-widget/vue-cli-plugin-web-widget",
+  "bugs": "https://github.com/web-widget/vue-cli-plugin-web-widget/issues",
+  "dependencies": {
+    "semver": "^7.3.5",
+    "@web-widget/standalone-web-widget-webpack-plugin": "^0.0.1-beta",
+    "systemjs-webpack-interop": "^2.3.7"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "webpack": "*"
+  }
+}
