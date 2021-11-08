@@ -25,10 +25,10 @@
     "url": "https://github.com/web-widget/create-web-widget/issues"
   },
   "dependencies": {
+    "@web-widget/standalone-web-widget-webpack-plugin": "^0.0.1-beta",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.7",
     "html-webpack-plugin": "^5.3.2",
-    "@web-widget/standalone-web-widget-webpack-plugin": "^0.0.1-beta",
     "style-loader": "^3.2.1",
     "systemjs-webpack-interop": "^2.3.7",
     "webpack-bundle-analyzer": "^4.4.2"

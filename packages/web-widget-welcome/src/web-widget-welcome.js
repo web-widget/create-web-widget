@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import webWidgetReact from "web-widget-react";
+import webWidgetReact from "single-spa-react";
 import Welcome from "./welcome";
 
 const lifecycles = webWidgetReact({
