@@ -1,5 +1,5 @@
 {
-  "name": "web-widget-welcome",
+  "name": "@web-widget/web-widget-welcome",
   "version": "0.0.1-beta",
   "description": "A welcome application to guide users with next steps after creating their first root config.",
   "publishConfig": {
