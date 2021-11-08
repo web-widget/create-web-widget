@@ -1,0 +1,35 @@
+{
+  "name": "@web-widget/webpack-config-web-widget-react",
+  "version": "0.0.1-beta",
+  "description": "A helper for creating webpack configs for react web-widget applications",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "web-widget",
+    "react",
+    "webpack",
+    "microfrontends"
+  ],
+  "author": "Joel Denning <joeldenning@gmail.com>",
+  "homepage": "https://github.com/web-widget/web-widget/packages/webpack-config-web-widget-react",
+  "license": "MIT",
+  "main": "lib/webpack-config-web-widget-react.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-widget/create-web-widget.git"
+  },
+  "scripts": {},
+  "bugs": {
+    "url": "https://github.com/web-widget/create-web-widget/issues"
+  },
+  "dependencies": {
+    "@web-widget/webpack-config-web-widget": "^0.0.1-beta"
+  }
+}

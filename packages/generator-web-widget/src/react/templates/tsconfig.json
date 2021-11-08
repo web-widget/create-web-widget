@@ -1,0 +1,10 @@
+{
+  "extends": "@web-widget/ts-config-web-widget",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "declarationDir": "dist"
+  },
+  "files": ["<%- mainFile %>"],
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}

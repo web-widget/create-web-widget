@@ -1,0 +1,43 @@
+{
+  "name": "@web-widget/webpack-config-web-widget-ts",
+  "version": "0.0.1-beta",
+  "description": "webpack-config for web-widget + typescript",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "web-widget",
+    "microfrontends",
+    "typescript",
+    "webpack"
+  ],
+  "author": "Joel Denning <joeldenning@gmail.com>",
+  "homepage": "https://github.com/web-widget/create-web-widget/tree/master/packages/webpack-config-web-widget-ts",
+  "license": "MIT",
+  "main": "lib/webpack-config-web-widget-ts.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-widget/create-web-widget.git"
+  },
+  "scripts": {
+    "test": "echo 'No tests yet'"
+  },
+  "bugs": {
+    "url": "https://github.com/web-widget/create-web-widget/issues"
+  },
+  "dependencies": {
+    "fork-ts-checker-webpack-plugin": "^6.3.2",
+    "typescript": "^4.1.2",
+    "@web-widget/webpack-config-web-widget": "^0.0.1-beta",
+    "webpack-merge": "^5.8.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4"
+  }
+}

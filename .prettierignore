@@ -2,7 +2,7 @@
 .prettierignore
 yarn.lock
 *.ejs
-packages/generator-single-spa/src/react/templates/webpack.config.js
+packages/generator-web-widget/src/react/templates/webpack.config.js
 tests/fixtures
 .DS_Store
 *.svelte

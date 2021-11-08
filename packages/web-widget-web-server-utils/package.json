@@ -1,0 +1,41 @@
+{
+  "name": "web-widget-web-server-utils",
+  "version": "0.0.1-beta",
+  "type": "module",
+  "description": "Utility functions for web-widget's recommended setup",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "web-widget",
+    "import",
+    "maps",
+    "ssr",
+    "server"
+  ],
+  "author": "Joel Denning <joeldenning@gmail.com>",
+  "homepage": "https://web-widget.js.org/docs/create-web-widget#web-widget-web-server-utils",
+  "license": "MIT",
+  "main": "lib/web-widget-web-server-utils.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-widget/create-web-widget.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 0"
+  },
+  "bugs": {
+    "url": "https://github.com/web-widget/create-web-widget/issues"
+  },
+  "dependencies": {
+    "import-map-overrides": "^2.4.1",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1"
+  }
+}

@@ -1,0 +1,399 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`standalone-web-widget-webpack-plugin basic-parcel 1`] = `
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Webpack App
+    </title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
+    >
+    <script type="systemjs-importmap"
+            src="https://react.microfrontends.app/importmap.json"
+    >
+    </script>
+    <script type="systemjs-importmap">
+      {
+  "imports": {
+    "web-widget": "https://cdn.jsdelivr.net/npm/web-widget/lib/system/web-widget.dev.js",
+    "basic-parcel": "/main.js",
+    "foo": "/foo.js"
+  }
+}
+    </script>
+    <meta name="importmap-type"
+          content="systemjs-importmap"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js">
+    </script>
+    <import-map-overrides-full dev-libs>
+    </import-map-overrides-full>
+    <script>
+      if (typeof fetch === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.4.0/dist/fetch.umd.js">
+      <\\/script>')
+      }
+      if (typeof String.prototype.startsWith === 'undefined' || typeof Promise === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/@babel/polyfill@7.10.4/dist/polyfill.min.js">
+      <\\/script>')
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js">
+    </script>
+    <script>
+      Promise.all([System.import('web-widget'), System.import('basic-parcel')]).then(function (values) {
+        const webWidget = values[0];
+        const parcelConfig = values[1];
+        const parcelContainer = document.createElement('div');
+        parcelContainer.id = 'parcel-container';
+        document.body.appendChild(parcelContainer);
+        webWidget.mountRootParcel(parcelConfig, { domElement: parcelContainer, name: 'basic-parcel' });
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+`;
+
+exports[`standalone-web-widget-webpack-plugin basic-usage 1`] = `
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Webpack App
+    </title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
+    >
+    <script type="systemjs-importmap"
+            src="https://react.microfrontends.app/importmap.json"
+    >
+    </script>
+    <script type="systemjs-importmap">
+      {
+  "imports": {
+    "web-widget": "https://cdn.jsdelivr.net/npm/web-widget/lib/system/web-widget.dev.js",
+    "basic-usage": "/main.js",
+    "foo": "/foo.js"
+  }
+}
+    </script>
+    <meta name="importmap-type"
+          content="systemjs-importmap"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js">
+    </script>
+    <import-map-overrides-full dev-libs>
+    </import-map-overrides-full>
+    <script>
+      if (typeof fetch === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.4.0/dist/fetch.umd.js">
+      <\\/script>')
+      }
+      if (typeof String.prototype.startsWith === 'undefined' || typeof Promise === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/@babel/polyfill@7.10.4/dist/polyfill.min.js">
+      <\\/script>')
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js">
+    </script>
+    <script>
+      System.import('web-widget').then(function (webWidget) {
+  webWidget.registerApplication({
+    name: 'basic-usage',
+    app: function () {
+      return System.import('basic-usage');
+    },
+    activeWhen: ["/"],
+    customProps: {}
+  });
+  if (!window.location.pathname.startsWith('/')) {
+    webWidget.navigateToUrl('/');
+  }
+  webWidget.start({"urlRerouteOnly":true});
+});
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+`;
+
+exports[`standalone-web-widget-webpack-plugin customProps option 1`] = `
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Webpack App
+    </title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
+    >
+    <script type="systemjs-importmap">
+      {
+  "imports": {
+    "web-widget": "https://cdn.jsdelivr.net/npm/web-widget/lib/system/web-widget.dev.js",
+    "basic-usage": "/main.js"
+  }
+}
+    </script>
+    <meta name="importmap-type"
+          content="systemjs-importmap"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js">
+    </script>
+    <import-map-overrides-full dev-libs
+                               show-when-local-storage="devtools"
+    >
+    </import-map-overrides-full>
+    <script>
+      if (typeof fetch === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.4.0/dist/fetch.umd.js">
+      <\\/script>')
+      }
+      if (typeof String.prototype.startsWith === 'undefined' || typeof Promise === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/@babel/polyfill@7.10.4/dist/polyfill.min.js">
+      <\\/script>')
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js">
+    </script>
+    <script>
+      System.import('web-widget').then(function (webWidget) {
+  webWidget.registerApplication({
+    name: 'basic-usage',
+    app: function () {
+      return System.import('basic-usage');
+    },
+    activeWhen: ["/"],
+    customProps: {"hi":"there"}
+  });
+  if (!window.location.pathname.startsWith('/')) {
+    webWidget.navigateToUrl('/');
+  }
+  webWidget.start({"urlRerouteOnly":true});
+});
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+`;
+
+exports[`standalone-web-widget-webpack-plugin disabled import-map-overrides 1`] = `
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Webpack App
+    </title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
+    >
+    <script type="systemjs-importmap">
+      {
+  "imports": {
+    "web-widget": "https://cdn.jsdelivr.net/npm/web-widget/lib/system/web-widget.dev.js",
+    "basic-usage": "/main.js"
+  }
+}
+    </script>
+    <meta name="importmap-type"
+          content="systemjs-importmap"
+    >
+    <script>
+      if (typeof fetch === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.4.0/dist/fetch.umd.js">
+      <\\/script>')
+      }
+      if (typeof String.prototype.startsWith === 'undefined' || typeof Promise === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/@babel/polyfill@7.10.4/dist/polyfill.min.js">
+      <\\/script>')
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js">
+    </script>
+    <script>
+      System.import('web-widget').then(function (webWidget) {
+  webWidget.registerApplication({
+    name: 'basic-usage',
+    app: function () {
+      return System.import('basic-usage');
+    },
+    activeWhen: ["/"],
+    customProps: {}
+  });
+  if (!window.location.pathname.startsWith('/')) {
+    webWidget.navigateToUrl('/');
+  }
+  webWidget.start({"urlRerouteOnly":true});
+});
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+`;
+
+exports[`standalone-web-widget-webpack-plugin import-map-overrides with local storage key 1`] = `
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Webpack App
+    </title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
+    >
+    <script type="systemjs-importmap">
+      {
+  "imports": {
+    "web-widget": "https://cdn.jsdelivr.net/npm/web-widget/lib/system/web-widget.dev.js",
+    "basic-usage": "/main.js"
+  }
+}
+    </script>
+    <meta name="importmap-type"
+          content="systemjs-importmap"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js">
+    </script>
+    <import-map-overrides-full dev-libs>
+    </import-map-overrides-full>
+    <script>
+      if (typeof fetch === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.4.0/dist/fetch.umd.js">
+      <\\/script>')
+      }
+      if (typeof String.prototype.startsWith === 'undefined' || typeof Promise === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/@babel/polyfill@7.10.4/dist/polyfill.min.js">
+      <\\/script>')
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js">
+    </script>
+    <script>
+      System.import('web-widget').then(function (webWidget) {
+  webWidget.registerApplication({
+    name: 'basic-usage',
+    app: function () {
+      return System.import('basic-usage');
+    },
+    activeWhen: ["/"],
+    customProps: {}
+  });
+  if (!window.location.pathname.startsWith('/')) {
+    webWidget.navigateToUrl('/');
+  }
+  webWidget.start({"urlRerouteOnly":true});
+});
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+`;
+
+exports[`standalone-web-widget-webpack-plugin startOptions option 1`] = `
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Webpack App
+    </title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
+    >
+    <script type="systemjs-importmap">
+      {
+  "imports": {
+    "web-widget": "https://cdn.jsdelivr.net/npm/web-widget/lib/system/web-widget.dev.js",
+    "basic-usage": "/main.js"
+  }
+}
+    </script>
+    <meta name="importmap-type"
+          content="systemjs-importmap"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/import-map-overrides/dist/import-map-overrides.js">
+    </script>
+    <import-map-overrides-full dev-libs>
+    </import-map-overrides-full>
+    <script>
+      if (typeof fetch === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.4.0/dist/fetch.umd.js">
+      <\\/script>')
+      }
+      if (typeof String.prototype.startsWith === 'undefined' || typeof Promise === 'undefined') {
+        document.write('
+      <script src="https://cdn.jsdelivr.net/npm/@babel/polyfill@7.10.4/dist/polyfill.min.js">
+      <\\/script>')
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/amd.js">
+    </script>
+    <script>
+      System.import('web-widget').then(function (webWidget) {
+  webWidget.registerApplication({
+    name: 'basic-usage',
+    app: function () {
+      return System.import('basic-usage');
+    },
+    activeWhen: ["/"],
+    customProps: {}
+  });
+  if (!window.location.pathname.startsWith('/')) {
+    webWidget.navigateToUrl('/');
+  }
+  webWidget.start({"urlRerouteOnly":false});
+});
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
+`;

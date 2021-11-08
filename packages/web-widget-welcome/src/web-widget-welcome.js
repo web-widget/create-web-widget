@@ -1,0 +1,24 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import webWidgetReact from "web-widget-react";
+import Welcome from "./welcome";
+
+const lifecycles = webWidgetReact({
+  React,
+  ReactDOM,
+  rootComponent: Welcome,
+  errorBoundary(err, info, props) {
+    // Customize the root error boundary for your microfrontend here.
+    return (
+      <p role="alert">
+        Oops! Something went wrong. Please help us fix this by submitting an
+        <a href="https://github.com/web-widget/create-web-widget/issues/new?title=web-widget-welcome+encountered+an+error&body=Steps+to+reproduce">
+          issue to our Github
+        </a>{" "}
+        with details on how you got here.
+      </p>
+    );
+  },
+});
+
+export const { bootstrap, mount, unmount } = lifecycles;
