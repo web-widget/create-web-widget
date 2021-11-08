@@ -1,5 +1,5 @@
 const SystemJSPublicPathWebpackPlugin = require("systemjs-webpack-interop/SystemJSPublicPathWebpackPlugin");
-const StandaloneSingleSpaPlugin = require("standalone-web-widget-webpack-plugin");
+const StandaloneSingleSpaPlugin = require("@web-widget/standalone-web-widget-webpack-plugin");
 
 module.exports = (api, options) => {
   options.css.extract = false;

@@ -93,20 +93,20 @@ class StandaloneWebWidgetPlugin {
   modifyScripts({ publicPath, scripts }) {
     if (scripts.modifiedByWebWidgetStandalonePlugin) {
       throw Error(
-        `standalone-web-widget-webpack-plugin: You have two separate instances of standalone-web-widget-webpack-plugin in your webpack config. If using @web-widget/webpack-config-web-widget or @web-widget/vue-cli-plugin-web-widget, you do not need to manually add the standalone plugin since it's already added by those projects.`
+        `@web-widget/standalone-web-widget-webpack-plugin: You have two separate instances of @web-widget/standalone-web-widget-webpack-plugin in your webpack config. If using @web-widget/webpack-config-web-widget or @web-widget/vue-cli-plugin-web-widget, you do not need to manually add the standalone plugin since it's already added by those projects.`
       );
     }
 
     if (scripts.length === 0) {
       throw Error(
-        `standalone-web-widget-webpack-plugin: HtmlWebpackPlugin must generate at least one <script> in its output, but did not. This usually indicates that there is a problem with your webpack configuration.`
+        `@web-widget/standalone-web-widget-webpack-plugin: HtmlWebpackPlugin must generate at least one <script> in its output, but did not. This usually indicates that there is a problem with your webpack configuration.`
       );
     }
 
     const mainScript = scripts[0];
     if (mainScript.tagName !== "script" || !mainScript.attributes.src) {
       throw Error(
-        `standalone-web-widget-webpack-plugin: HtmlWebpackPlugin contains an HTML element that's not a <script> with a 'src' attribute in its scripts array. Found ${mainScript.tagName}. This usually indicates a problem with your webpack configuration`
+        `@web-widget/standalone-web-widget-webpack-plugin: HtmlWebpackPlugin contains an HTML element that's not a <script> with a 'src' attribute in its scripts array. Found ${mainScript.tagName}. This usually indicates a problem with your webpack configuration`
       );
     }
 
@@ -286,7 +286,7 @@ class StandaloneWebWidgetPlugin {
       <p>
         The ${
           this.options.appOrParcelName
-        } microfrontend is running in "integrated" mode, since standalone-web-widget-webpack-plugin is disabled. This means that
+        } microfrontend is running in "integrated" mode, since @web-widget/standalone-web-widget-webpack-plugin is disabled. This means that
         it does not work as a standalone application without changing configuration.
       </p>
       <h2>How do I develop this microfrontend?</h2>
@@ -334,14 +334,14 @@ class StandaloneWebWidgetPlugin {
       </p>
       <h2>If you prefer Standalone mode</h2>
       <p>
-        To run this microfrontend in "standalone" mode, the standalone-web-widget-webpack-plugin must not be disabled. In some cases,
+        To run this microfrontend in "standalone" mode, the @web-widget/standalone-web-widget-webpack-plugin must not be disabled. In some cases,
         this is done by running <code>npm run start:standalone</code>. Alternatively, you can add <code>--env${
           isWebpack5 ? " " : "."
         }standalone</code> to your package.json start script
         if you are using webpack-config-web-widget.
       </p>
         If neither of those work for you, see more details about enabling standalone mode at
-        <a target="_blank" rel="noopener" href="https://github.com/web-widget/standalone-web-widget-webpack-plugin">Standalone Plugin Documentation</a>.
+        <a target="_blank" rel="noopener" href="https://github.com/web-widget/create-web-widget/packages/standalone-web-widget-webpack-plugin">Standalone Plugin Documentation</a>.
       </p>
       <script>
         const mfLink = document.getElementById('mf-url');

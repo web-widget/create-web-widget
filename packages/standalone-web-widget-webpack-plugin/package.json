@@ -37,10 +37,6 @@
     "html-webpack-plugin": "*",
     "webpack": "*"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/web-widget/standalone-web-widget-webpack-plugin.git"
-  },
   "keywords": [
     "webpack",
     "web-widget",
@@ -48,10 +44,6 @@
   ],
   "author": "Joel Denning",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/web-widget/standalone-web-widget-webpack-plugin/issues"
-  },
-  "homepage": "https://github.com/web-widget/standalone-web-widget-webpack-plugin#readme",
   "engines": {
     "node": ">= 8.3.0"
   }
