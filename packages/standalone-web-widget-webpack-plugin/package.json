@@ -1,6 +1,6 @@
 {
   "name": "@web-widget/standalone-web-widget-webpack-plugin",
-  "version": "0.0.1-beta2.0",
+  "version": "0.0.1-beta3.0",
   "description": "A webpack plugin to run web-widget microfrontends as standalone",
   "publishConfig": {
     "access": "public"

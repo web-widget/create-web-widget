@@ -1,6 +1,6 @@
 {
   "name": "@web-widget/webpack-config-web-widget-react",
-  "version": "0.0.1-beta2.0",
+  "version": "0.0.1-beta3.0",
   "description": "A helper for creating webpack configs for react web-widget applications",
   "publishConfig": {
     "access": "public"
@@ -30,6 +30,6 @@
     "url": "https://github.com/web-widget/create-web-widget/issues"
   },
   "dependencies": {
-    "@web-widget/webpack-config-web-widget": "^0.0.1-beta2.0"
+    "@web-widget/webpack-config-web-widget": "^0.0.1-beta3.0"
   }
 }
