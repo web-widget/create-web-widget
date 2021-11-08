@@ -1,4 +1,8 @@
 const semver = require("semver");
+const pkg = require("./package.json");
+const adapter = {
+  "@web-widget/web-widget-vue": pkg.dependencies["@web-widget/web-widget-vue"],
+};
 
 module.exports = (api) => {
   const isTs = api.entryFile.endsWith(".ts");
@@ -41,7 +45,7 @@ module.exports = (api) => {
       "serve:standalone": "vue-cli-service serve --mode standalone",
     },
     dependencies: {
-      "@web-widget/web-widget-vue": "^2.1.0",
+      ...adapter,
     },
   });
 };

@@ -91,13 +91,17 @@ module.exports = class WebWidgetVueGenerator extends Generator {
     fs.writeFileSync(pkgJsonPath, JSON.stringify(pkgJson, null, 2));
 
     // We purposely do not attempt to install in one command using presets to avoid being too restrictive with application configuration
-    spawnSync(command, args.concat(["add", "web-widget"]), {
-      stdio: "inherit",
-      cwd: projectPath,
-      env: Object.assign({}, process.env, {
-        VUE_CLI_SKIP_DIRTY_GIT_PROMPT: true,
-      }),
-    });
+    spawnSync(
+      command,
+      args.concat(["add", "@web-widget/vue-cli-plugin-web-widget"]),
+      {
+        stdio: "inherit",
+        cwd: projectPath,
+        env: Object.assign({}, process.env, {
+          VUE_CLI_SKIP_DIRTY_GIT_PROMPT: true,
+        }),
+      }
+    );
   }
   async finished() {
     const usedYarn = this.fs.exists(

@@ -17,6 +17,7 @@
   "bugs": "https://github.com/web-widget/vue-cli-plugin-web-widget/issues",
   "dependencies": {
     "@web-widget/standalone-web-widget-webpack-plugin": "^0.0.1-beta",
+    "@web-widget/web-widget-vue": "^0.0.1-beta",
     "semver": "^7.3.5",
     "systemjs-webpack-interop": "^2.3.7"
   },
