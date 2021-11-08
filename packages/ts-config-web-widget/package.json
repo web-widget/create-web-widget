@@ -1,6 +1,6 @@
 {
   "name": "@web-widget/ts-config-web-widget",
-  "version": "0.0.1-beta",
+  "version": "0.0.1-beta2.0",
   "description": "typescript config for web-widget",
   "publishConfig": {
     "access": "public"

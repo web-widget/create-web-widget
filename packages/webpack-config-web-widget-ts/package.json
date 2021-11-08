@@ -1,6 +1,6 @@
 {
   "name": "@web-widget/webpack-config-web-widget-ts",
-  "version": "0.0.1-beta",
+  "version": "0.0.1-beta2.0",
   "description": "webpack-config for web-widget + typescript",
   "publishConfig": {
     "access": "public"
@@ -32,7 +32,7 @@
     "url": "https://github.com/web-widget/create-web-widget/issues"
   },
   "dependencies": {
-    "@web-widget/webpack-config-web-widget": "^0.0.1-beta",
+    "@web-widget/webpack-config-web-widget": "^0.0.1-beta2.0",
     "fork-ts-checker-webpack-plugin": "^6.3.2",
     "typescript": "^4.1.2",
     "webpack-merge": "^5.8.0"

@@ -1,6 +1,6 @@
 {
   "name": "@web-widget/web-widget-web-server-utils",
-  "version": "0.0.1-beta",
+  "version": "0.0.1-beta2.0",
   "type": "module",
   "description": "Utility functions for web-widget's recommended setup",
   "publishConfig": {

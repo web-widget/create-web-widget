@@ -4,7 +4,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.1-beta",
+  "version": "0.0.1-beta2.0",
   "scripts": {
     "test": "tests/test.sh",
     "test:vue2": "tests/testVue.sh 2",
@@ -16,7 +16,7 @@
   "repository": "https://github.com/web-widget/vue-cli-plugin-web-widget",
   "bugs": "https://github.com/web-widget/vue-cli-plugin-web-widget/issues",
   "dependencies": {
-    "@web-widget/standalone-web-widget-webpack-plugin": "^0.0.1-beta",
+    "@web-widget/standalone-web-widget-webpack-plugin": "^0.0.1-beta2.0",
     "@web-widget/web-widget-vue": "^0.0.1-beta",
     "semver": "^7.3.5",
     "systemjs-webpack-interop": "^2.3.7"

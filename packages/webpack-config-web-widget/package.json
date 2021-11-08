@@ -1,6 +1,6 @@
 {
   "name": "@web-widget/webpack-config-web-widget",
-  "version": "0.0.1-beta",
+  "version": "0.0.1-beta2.0",
   "description": "A webpack config for in-browser modules used with web-widget",
   "publishConfig": {
     "access": "public"
@@ -25,7 +25,7 @@
     "url": "https://github.com/web-widget/create-web-widget/issues"
   },
   "dependencies": {
-    "@web-widget/standalone-web-widget-webpack-plugin": "^0.0.1-beta",
+    "@web-widget/standalone-web-widget-webpack-plugin": "^0.0.1-beta2.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.7",
     "html-webpack-plugin": "^5.3.2",

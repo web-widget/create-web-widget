@@ -1,6 +1,6 @@
 {
   "name": "@web-widget/webpack-config-web-widget-react-ts",
-  "version": "0.0.1-beta",
+  "version": "0.0.1-beta2.0",
   "description": "Shareable webpack config for web-widget react projects that use typescript",
   "publishConfig": {
     "access": "public"
@@ -33,7 +33,7 @@
     "url": "https://github.com/web-widget/create-web-widget/issues"
   },
   "dependencies": {
-    "@web-widget/webpack-config-web-widget-react": "^0.0.1-beta",
-    "@web-widget/webpack-config-web-widget-ts": "^0.0.1-beta"
+    "@web-widget/webpack-config-web-widget-react": "^0.0.1-beta2.0",
+    "@web-widget/webpack-config-web-widget-ts": "^0.0.1-beta2.0"
   }
 }

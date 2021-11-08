@@ -1,6 +1,6 @@
 {
   "name": "@web-widget/web-widget-welcome",
-  "version": "0.0.1-beta",
+  "version": "0.0.1-beta2.0",
   "description": "A welcome application to guide users with next steps after creating their first root config.",
   "publishConfig": {
     "access": "public"
@@ -40,8 +40,8 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^27.0.1",
-    "@web-widget/ts-config-web-widget": "^0.0.1-beta",
-    "@web-widget/webpack-config-web-widget-react": "^0.0.1-beta",
+    "@web-widget/ts-config-web-widget": "^0.0.1-beta2.0",
+    "@web-widget/webpack-config-web-widget-react": "^0.0.1-beta2.0",
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
     "concurrently": "^6.2.1",

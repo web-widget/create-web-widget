@@ -1,6 +1,6 @@
 {
   "name": "@web-widget/create-web-widget",
-  "version": "0.0.1-beta",
+  "version": "0.0.1-beta2.0",
   "description": "",
   "publishConfig": {
     "access": "public"
@@ -11,7 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@web-widget/generator-web-widget": "^0.0.1-beta",
+    "@web-widget/generator-web-widget": "^0.0.1-beta2.0",
     "yargs": "^17.1.1",
     "yeoman-environment": "^3.6.0"
   }
