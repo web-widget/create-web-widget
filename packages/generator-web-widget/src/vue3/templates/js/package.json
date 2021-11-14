@@ -1,0 +1,36 @@
+{
+  "name": "my-widget",
+  "version": "0.0.0",
+  "source": "src/main.js",
+  "main": "dist/cjs/main.js",
+  "module": "dist/esm/main.js",
+  "system": "dist/system/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/main.js",
+      "require": "./dist/cjs/main.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "web-widget-app"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@web-widget/web-widget-vue": "^0.0.1-beta2.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.12",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/compiler-sfc": "^3.2.21",
+    "vite": "^2.6.4"
+  }
+}
