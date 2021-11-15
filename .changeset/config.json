@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "single-spa/create-single-spa"
+      "repo": "web-widget/create"
     }
   ],
   "commit": false,

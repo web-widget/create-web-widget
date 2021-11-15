@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "debug": "node ../packages/create-web-widget/bin/create-web-widget.js"
+  }
+}

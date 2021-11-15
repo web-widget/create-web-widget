@@ -1,0 +1,31 @@
+{
+  "name": "my-widget",
+  "version": "0.0.0",
+  "source": "src/main.js",
+  "main": "dist/cjs/main.js",
+  "module": "dist/esm/main.js",
+  "system": "dist/system/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/main.js",
+      "require": "./dist/cjs/main.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "web-widget-app"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "lit": "^2.0.0"
+  },
+  "devDependencies": {
+    "@web-widget/container": "^0.0.12",
+    "vite": "^2.6.4"
+  }
+}

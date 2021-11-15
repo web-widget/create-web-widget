@@ -1,0 +1,9 @@
+{
+  "extends": "@web-widget/ts-config-web-widget",
+  "files": ["<%= mainFile %>"],
+  "compilerOptions": {
+    "declarationDir": "dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}

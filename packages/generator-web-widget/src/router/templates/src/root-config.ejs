@@ -1,0 +1,20 @@
+import { registerApplication, start } from "web-widget";
+
+registerApplication({
+  name: "@web-widget/welcome",
+  app: () =>
+    System.import(
+      "https://unpkg.com/web-widget-welcome/dist/web-widget-welcome.js"
+    ),
+  activeWhen: ["/"],
+});
+
+// registerApplication({
+//   name: "@<%- orgName %>/navbar",
+//   app: () => System.import("@<%- orgName %>/navbar"),
+//   activeWhen: ["/"]
+// });
+
+start({
+  urlRerouteOnly: true,
+});
