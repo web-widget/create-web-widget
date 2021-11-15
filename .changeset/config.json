@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "web-widget/create-web-widget"
+      "repo": "web-widget/create"
     }
   ],
   "commit": false,

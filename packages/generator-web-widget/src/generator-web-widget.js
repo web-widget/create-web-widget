@@ -51,7 +51,7 @@ module.exports = class WebWidgetGenerator extends Generator {
   initializing() {
     const { stdout } = this.spawnCommandSync(
       "npm",
-      ["view", "@web-widget/create-web-widget@latest", "version"],
+      ["view", "@web-widget/create@latest", "version"],
       { stdio: "pipe" }
     );
 

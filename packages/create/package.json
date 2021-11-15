@@ -1,12 +1,12 @@
 {
-  "name": "@web-widget/create-web-widget",
+  "name": "@web-widget/create",
   "version": "0.0.1",
   "description": "",
   "publishConfig": {
     "access": "public"
   },
   "bin": {
-    "create-web-widget": "bin/create-web-widget.js"
+    "create-web-widget": "bin/create.js"
   },
   "author": "",
   "license": "MIT",

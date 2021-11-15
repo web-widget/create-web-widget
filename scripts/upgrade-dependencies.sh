@@ -1,6 +1,6 @@
 #!/bin/sh
 pnpx ncu -iu --packageFile ./package.json
-pnpx ncu -iu --packageFile ./packages/create-web-widget/package.json
+pnpx ncu -iu --packageFile ./packages/create/package.json
 pnpx ncu -iu --packageFile ./packages/web-widget-web-server-utils/package.json
 pnpx ncu -iu --packageFile ./packages/web-widget-welcome/package.json
 pnpx ncu -iu --packageFile ./packages/ts-config-web-widget/package.json

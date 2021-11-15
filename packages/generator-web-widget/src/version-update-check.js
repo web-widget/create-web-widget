@@ -27,9 +27,7 @@ module.exports = function versionUpdateCheck(currentVersion, latestVersion) {
         msg = chalk.green(msg);
       }
       console.log(
-        chalk.underline(
-          `\nA ${updateType} of create-web-widget is available: ${msg}\n`
-        )
+        chalk.underline(`\nA ${updateType} of create is available: ${msg}\n`)
       );
     }
   } catch (e) {

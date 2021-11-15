@@ -16,7 +16,7 @@ exports.createFixtureIfDoesntExist = function (name, args) {
 
       console.log(`Creating '${name}' fixture.`);
 
-      const command = `node ../../packages/create-web-widget/bin/create-web-widget.js --dir ${name} ${argsStr}`;
+      const command = `node ../../packages/create/bin/create.js --dir ${name} ${argsStr}`;
 
       console.log(command);
 

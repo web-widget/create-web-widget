@@ -30,7 +30,7 @@ function checkNodeVersion() {
 
   if (!validVersion) {
     throw Error(
-      "create-web-widget requires NodeJS >= " +
+      "create requires NodeJS >= " +
         minVersion +
         ", but you are using NodeJS " +
         process.versions.node +
