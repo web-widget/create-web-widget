@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "run": "npm run js && npm run ts",
-    "ts": "node ../packages/create/bin/create.js --dir ./ts-vanilla --type=application --framework vanilla --packageManager=npm --packageName tang-bing-test --typescript",
-    "js": "node ../packages/create/bin/create.js --dir ./js-vanilla --type=application --framework vanilla --packageManager=npm --packageName tang-bing-test --no-typescript"
-  }
-}
