@@ -1,37 +1,15 @@
 {
-  "name": "my-widget",
-  "version": "0.0.0",
-  "source": "src/main.js",
-  "main": "dist/cjs/main.js",
-  "module": "dist/esm/main.js",
-  "system": "dist/system/main.js",
-  "exports": {
-    ".": {
-      "import": "./dist/esm/main.js",
-      "require": "./dist/cjs/main.js"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "web-widget-app"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build"
-  },
   "peerDependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react": "*",
+    "react-dom": "*"
   },
   "dependencies": {
     "@web-widget/web-widget-react": "^0.0.1-beta"
   },
   "devDependencies": {
     "@web-widget/container": "^0.0.12",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/react": "*",
+    "@types/react-dom": "*",
     "@vitejs/plugin-react": "^1.0.0",
     "typescript": "^4.3.2",
     "vite": "^2.6.4"
