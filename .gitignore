@@ -17,6 +17,7 @@ npm-debug.log
 yarn-error.log
 packages/generator-web-widget/src/**/package-lock.json
 
+
 ## temp folders
 .tmp/
 
