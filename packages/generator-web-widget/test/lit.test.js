@@ -1,17 +1,17 @@
 const generator = require("../src/generator-web-widget");
 const helpers = require("yeoman-test");
 
-describe("generator-web-widget-react", () => {
+describe("generator-web-widget-lit", () => {
   const runGenerator = (prompts) =>
     helpers
       .create(generator)
       .withOptions({
-        framework: "react",
+        framework: "lit",
         skipInstall: true,
       })
       .withPrompts({
         packageManager: "npm",
-        projectName: "react-project",
+        projectName: "lit-project",
         ...prompts,
       })
       .run();

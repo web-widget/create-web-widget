@@ -1,12 +1,13 @@
 const generator = require("../src/generator-web-widget");
 const helpers = require("yeoman-test");
 
-describe("generator-web-widget-react", () => {
+describe("generator-web-widget-react: typescript", () => {
   const runGenerator = (prompts) =>
     helpers
       .create(generator)
       .withOptions({
         framework: "react",
+        typescript: true,
         skipInstall: true,
       })
       .withPrompts({

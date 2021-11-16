@@ -1,5 +1,15 @@
 {
   "scripts": {
-    "debug": "node ../packages/create-web-widget/bin/create-web-widget.js"
+    "test-build-all": "npm run lit && npm run lit-ts && npm run vanilla && npm run vanilla-ts && npm run react && npm run react-ts && npm run vue2 && npm run vue2-ts && npm run vue3 && npm run vue3-ts",
+    "lit": "node ../packages/create/bin/create.js --dir lit --framework lit --packageName test-lit --type application --no-typescript --packageManager npm && cd lit && npm run build",
+    "lit-ts": "node ../packages/create/bin/create.js --dir lit-ts --framework lit --packageName test-lit-ts --type application --typescript --packageManager npm && cd lit-ts && npm run build",
+    "vanilla": "node ../packages/create/bin/create.js --dir vanilla --framework vanilla --packageName test-vanilla --type application --no-typescript --packageManager npm && cd vanilla && npm run build",
+    "vanilla-ts": "node ../packages/create/bin/create.js --dir vanilla-ts --framework vanilla --packageName test-vanilla-ts --type application --typescript --packageManager npm && cd vanilla-ts && npm run build",
+    "react": "node ../packages/create/bin/create.js --dir react --framework react --packageName test-react --type application --no-typescript --packageManager npm && cd react && npm run build",
+    "react-ts": "node ../packages/create/bin/create.js --dir react-ts --framework react --packageName test-react-ts --type application --typescript --packageManager npm && cd react-ts && npm run build",
+    "vue2": "node ../packages/create/bin/create.js --dir vue2 --framework vue --frameworkVersion=2 --packageName test-vue2 --type application --no-typescript --packageManager npm && cd vue2 && npm run build",
+    "vue2-ts": "node ../packages/create/bin/create.js --dir vue2-ts --framework vue --frameworkVersion=2 --packageName test-vue2-ts --type application --typescript --packageManager npm && cd vue2-ts && npm run build",
+    "vue3": "node ../packages/create/bin/create.js --dir vue3 --framework vue --frameworkVersion=3 --packageName test-vue3 --type application --no-typescript --packageManager npm && cd vue3 && npm run build",
+    "vue3-ts": "node ../packages/create/bin/create.js --dir vue3-ts --framework vue --frameworkVersion=3 --packageName test-vue3-ts --type application --typescript --packageManager npm && cd vue3-ts && npm run build"
   }
 }
