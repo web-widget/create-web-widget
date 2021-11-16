@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "main": "dist/cjs/main.js",
+  "module": "dist/esm/main.js",
+  "system": "dist/system/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/main.js",
+      "require": "./dist/cjs/main.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "web-widget-app",
+    "wwa"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}
